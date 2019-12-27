@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/record_delete" android:title="刪除記錄" app:showAsAction="never"/>
+    <item android:id="@+id/give_up" android:title="放棄遊戲" app:showAsAction="never"/>
+    <item android:id="@+id/restart" android:title="重新開始" app:showAsAction="never"/>
+    <item android:id="@+id/exit" android:title="結束" app:showAsAction="never"/>
+</menu>
