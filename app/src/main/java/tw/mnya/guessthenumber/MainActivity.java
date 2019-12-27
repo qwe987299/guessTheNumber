@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
             // 變數區
             int in = 0; // 輸入值
-            int min = 0; // 最小值
+            int min = 1; // 最小值
             int max = 99; // 最大值
             int time = 0; // 猜測次數
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
                         // 初始值
                         in = 0; // 輸入值
-                        min = 0; // 最小值
+                        min = 1; // 最小值
                         max = 99; // 最大值
                         time = 0; // 猜測次數
                         input.setText(""); // 清空輸入
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                                             input.setText("");
 
                                             // 判斷區
-                                            if (in < max && in > min) { // 輸入值介於最大至最小可能值內
+                                            if (in <= max && in >= min) { // 輸入值介於最大至最小可能值內
                                                 if (in > ranNum) {
                                                     max = in;
                                                     hint.setText("提示訊息：請輸入 " + min + "～" + max + " 的數字");
